@@ -5,7 +5,7 @@
 /* LAYOUT STYLES */
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, serif;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
   color: #666;
@@ -32,7 +32,7 @@ header {
 }
 
 header h1 {
-  width: 540px;
+  width: 740px;
   margin-top: 0;
   margin-bottom: 0.2em;
   font-size: 56px;
@@ -43,7 +43,7 @@ header h1 {
 }
 
 header h2 {
-  width: 540px;
+  width: 740px;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 28px;
@@ -66,7 +66,7 @@ header h2 {
 
 #main-content {
   float: left;
-  width: 690px;
+  width: 790px;
 }
 
 #main-content img {
@@ -75,7 +75,7 @@ header h2 {
 
 aside#sidebar {
   float: right;
-  width: 200px;
+  width: 100px;
   min-height: 504px;
   padding-left: 20px;
   font-size: 12px;
@@ -124,7 +124,7 @@ aside a.button {
 code, pre {
   margin-bottom: 30px;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  font-size: 13px;
+  font-size: 14px;
   color: #222;
 }
 
