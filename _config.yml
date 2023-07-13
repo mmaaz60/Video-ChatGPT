@@ -1,1 +1,5 @@
-theme: minima
+title: Quantifying Video Conversation Models
+description: Quantitative Evaluation Framework for Video-based Conversational Models
+show_downloads: false
+google_analytics:
+theme: jekyll-theme-architect
