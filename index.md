@@ -1,15 +1,8 @@
-[//]: # ()
-[//]: # (<br>)
-
-[//]: # ()
-[//]: # (&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  [Paper]&#40;https://arxiv.org/abs/2206.10589&#41;: [<img height="25" src="/EdgeNeXt/Paper.PNG" width="25" />]&#40;https://arxiv.org/abs/2206.10589&#41;  , [Code:]&#40;https://github.com/mmaaz60/EdgeNeXt&#41; [<img height="25" src="/EdgeNeXt/Github.png" width="25" />]&#40;https://github.com/mmaaz60/EdgeNeXt&#41;, [Slides:]&#40;https://mbzuaiac-my.sharepoint.com/personal/muhammad_maaz_mbzuai_ac_ae/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fmuhammad%5Fmaaz%5Fmbzuai%5Fac%5Fae%2FDocuments%2FMS%5FThesis%2FEdgeNeXt%2FEdgeNeXt%2Epdf&parent=%2Fpersonal%2Fmuhammad%5Fmaaz%5Fmbzuai%5Fac%5Fae%2FDocuments%2FMS%5FThesis%2FEdgeNeXt&ga=1&#41; [<img height="25" src="/EdgeNeXt/Slides.png" width="25" />]&#40;https://mbzuaiac-my.sharepoint.com/personal/muhammad_maaz_mbzuai_ac_ae/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fmuhammad%5Fmaaz%5Fmbzuai%5Fac%5Fae%2FDocuments%2FMS%5FThesis%2FEdgeNeXt%2FEdgeNeXt%2Epdf&parent=%2Fpersonal%2Fmuhammad%5Fmaaz%5Fmbzuai%5Fac%5Fae%2FDocuments%2FMS%5FThesis%2FEdgeNeXt&ga=1&#41;)
-
-[//]: # ()
-[//]: # (<br>)
 
 ## Quantitative Evaluation Framework for Video-based Conversational Models
 
-This page provides a detailed walkthrough of our proposed quantitative benchmarking framework. The framework enables an in-depth evaluation of video-based conversational models through two types of assessments:
+This page provides a detailed walkthrough of quantitative benchmarking framework for Video Conversational Models proposed in [Video-ChatGPT](https://github.com/mbzuai-oryx/Video-ChatGPT).
+The framework enables an in-depth evaluation of video-based conversational models through two types of assessments:
 
 1. Video-based Generative Performance Benchmarking
 2. Zero-Shot Question-Answer Evaluation
@@ -40,6 +33,7 @@ Our benchmarks cover five key aspects:
 | Temporal Understanding |      1.94      |       **1.98**        |      1.82      |       **1.98**        |
 | Consistency |      2.24      |       2.15        |      1.79      |       **2.37**        |
 
+&nbsp;
 
 We generate task-specific question-answers by querying the GPT-3.5-Turbo model using the human-generated detailed video descriptions. The generated question-answer pairs are available for download [here](https://mbzuaiac-my.sharepoint.com/:f:/g/personal/hanoona_bangalath_mbzuai_ac_ae/EoS-mdm-KchDqCVbGv8v-9IB_ZZNXtcYAHtyvI06PqbF_A?e=1sNbaa).
 
@@ -76,7 +70,7 @@ For evaluation on all 5 criteria, you can use:
 bash quantitative_evaluation/evaluate_benchmark.sh
 ```
 
-Note: To further understand how the question-answer annotations are prepared for the benchmarking, refer to: [benchmark_dataset_generation](benchmark_dataset_generation).
+Note: To further understand how the question-answer annotations are prepared for the benchmarking, refer to: [benchmark_dataset_generation](https://github.com/mbzuai-oryx/Video-ChatGPT/tree/main/quantitative_evaluation/benchmark_dataset_generation).
 
 ---
 ## Zero-Shot Question-Answer Evaluation
@@ -93,6 +87,7 @@ Our framework facilitates zero-shot evaluation on five standard open-ended quest
 | Video LLaMA | 51.6 | 2.5 | 29.6 | 1.8 | - | - | 12.4 | 1.1 |
 | Video-ChatGPT | **64.9** | **3.3** | **49.3** | **2.8** | **51.4** | **3.0** | **35.2** | **2.7** |
 
+&nbsp;
 
 Follow these steps to conduct the evaluation:
 
@@ -127,3 +122,20 @@ python quantitative_evaluation/evaluate_activitynet_qa.py \
     --api_key <your-openai-api_key> \
     --num_tasks 1
 ```
+
+## Citation
+
+```bibtex
+    @article{Maaz2023VideoChatGPT,
+        title={Video-ChatGPT: Towards Detailed Video Understanding via Large Vision and Language Models},
+        author={Muhammad Maaz, Hanoona Rasheed, Salman Khan and Fahad Khan},
+        journal={ArXiv 2306.05424},
+        year={2023}
+    }
+```
+
+---
+[<img src="images/IVAL_logo.png" width="200" height="100">](https://www.ival-mbzuai.com)
+[<img src="images/Oryx_logo.png" width="100" height="100">](https://github.com/mbzuai-oryx)
+[<img src="images/video_chatgpt_logo.png" width="300" height="100">](https://github.com/mbzuai-oryx/Video-ChatGPT)
+[<img src="images/MBZUAI_logo.png" width="360" height="85">](https://mbzuai.ac.ae)
