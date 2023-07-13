@@ -25,13 +25,13 @@ Our benchmarks cover five key aspects:
 5. Consistency
 
 
-| **Evaluation Aspect** | **Video Chat** | **LLaMA Adapter** | **Video LLaMA** | **Video-ChatGPT** |
-| --- |:--------------:|:-----------------:|:--------------:|:-----------------:|
+| **Evaluation Aspect**      | **Video Chat** | **LLaMA Adapter** | **Video LLaMA** | **Video-ChatGPT** |
+|:---------------------------|:--------------:|:-----------------:|:--------------:|:-----------------:|
 | Correctness of Information |      2.23      |       2.03        |      1.96      |       **2.40**        |
-| Detail Orientation |      2.50      |       2.32        |      2.18      |       **2.52**        |
-| Contextual Understanding |      2.53      |       2.30        |      2.16      |       **2.62**        |
-| Temporal Understanding |      1.94      |       **1.98**        |      1.82      |       **1.98**        |
-| Consistency |      2.24      |       2.15        |      1.79      |       **2.37**        |
+| Detail Orientation         |      2.50      |       2.32        |      2.18      |       **2.52**        |
+| Contextual Understanding   |      2.53      |       2.30        |      2.16      |       **2.62**        |
+| Temporal Understanding     |      1.94      |       **1.98**        |      1.82      |       **1.98**        |
+| Consistency                |      2.24      |       2.15        |      1.79      |       **2.37**        |
 
 &nbsp;
 
@@ -78,13 +78,13 @@ Note: To further understand how the question-answer annotations are prepared for
 Our framework facilitates zero-shot evaluation on five standard open-ended question-answer datasets: MSRVTT, MSVD, TGIF, and ActivityNet-QA. For the sake of brevity, we present the evaluation method on ActivityNet-QA. The evaluation protocol remains the same for all datasets, except for some dataset-specific changes related to videos and annotations.
 
 
-| **Model** | **MSVD-QA** |  | **MSRVTT-QA** |  | **TGIF-QA** |  | **Activity Net-QA** |  |
-| --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| | **Accuracy** | **Score** | **Accuracy** | **Score** | **Accuracy** | **Score** | **Accuracy** | **Score** |
-| FrozenBiLM | 32.2 | -- | 16.8 | -- | 41.0 | -- | 24.7 | -- |
-| Video Chat | 56.3 | 2.8 | 45.0 | 2.5 | 34.4 | 2.3 | 26.5 | 2.2 |
+| **Model**     | **MSVD-QA** |  | **MSRVTT-QA** |  | **TGIF-QA** |  | **Activity Net-QA** |  |
+|:--------------| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+|               | **Accuracy** | **Score** | **Accuracy** | **Score** | **Accuracy** | **Score** | **Accuracy** | **Score** |
+| FrozenBiLM    | 32.2 | -- | 16.8 | -- | 41.0 | -- | 24.7 | -- |
+| Video Chat    | 56.3 | 2.8 | 45.0 | 2.5 | 34.4 | 2.3 | 26.5 | 2.2 |
 | LLaMA Adapter | 54.9 | 3.1 | 43.8 | 2.7 | - | - | 34.2 | 2.7 |
-| Video LLaMA | 51.6 | 2.5 | 29.6 | 1.8 | - | - | 12.4 | 1.1 |
+| Video LLaMA   | 51.6 | 2.5 | 29.6 | 1.8 | - | - | 12.4 | 1.1 |
 | Video-ChatGPT | **64.9** | **3.3** | **49.3** | **2.8** | **51.4** | **3.0** | **35.2** | **2.7** |
 
 &nbsp;
